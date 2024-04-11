@@ -1,0 +1,70 @@
+---
+title: "AE 16: Civil liberties"
+format: 
+  html:
+    toc: true
+editor: visual
+---
+
+```{r}
+#| label: load-packages-data
+#| message: false
+
+library(tidyverse)
+library(gganimate)
+```
+
+```{r}
+#| label: load-data
+#| message: false
+
+freedom <- read_csv("data/freedom.csv", na = "-")
+```
+
+## Task 1: Data wrangling
+
+-   Find countries to plot -- those with highest standard deviation in civil liberties scores - and subset the data for these countries.
+
+```{r}
+#| label: freedom-to-plot
+
+# add code here
+```
+
+-   Create a ranked dataset of these countries, and mark Turkey (or another country of interest).
+
+```{r}
+#| label: freedom-ranked
+
+# add code here
+```
+
+## Task 2: Faceted plot
+
+Create a faceted plot, with one facet for each year.
+
+```{r}
+#| label: freedom-faceted-plot
+#| fig-width: 16
+#| fig-asp: 1
+
+# add code here
+```
+
+## Task 3: Animated plot
+
+-   Create an animated plot object for the faceted plot with transitions between each year.
+
+```{r}
+#| label: freedom-bar-race
+
+# add code here
+```
+
+-   Animate the plot.
+
+```{r}
+#| label: freedom-animate
+
+# add code here
+```
